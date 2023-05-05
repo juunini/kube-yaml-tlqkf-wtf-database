@@ -1,0 +1,5 @@
+Argo CD에 GitOps 형태로 등록해두고 쓰는것을 목적으로 만든 YAML입니다.
+Argo Rollouts의 Blue-Green 배포를 이용하고 있으며, 완전히 그린을 배포하기 전에 미리 보기를 지원합니다.
+
+Argo Workflows와 함께 CI/CD를 구축하는 핸즈온을 아래 주소에 작성해두었으니 참고 바랍니다.
+https://tech.cloudmt.co.kr/2023/02/27/juunini-why-argo/
