@@ -1,0 +1,6 @@
+아래의 패키지를 쿠버네티스 클러스터에 설치합니다.
+
+- Argo CD(with Argo Rollouts)
+- Argo Workflow(with Argo Event)
+- Ingress Nginx
+- Cert Manager
