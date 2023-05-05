@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: $NAMESPACE-preview
+  namespace: $NAMESPACE
+spec:
+  selector:
+    app: $NAMESPACE
+  ports:
+    - protocol: TCP
+      port: $CONTAINER_PORT
+      targetPort: $CONTAINER_PORT

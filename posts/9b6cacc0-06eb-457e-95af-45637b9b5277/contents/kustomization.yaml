@@ -1,0 +1,8 @@
+resources:
+  - rollout.yaml
+  - secret.yaml
+  - service.yaml
+  - service_preview.yaml
+  - ingress.yaml
+  - ingress_preview.yaml
+  - issuer.yaml

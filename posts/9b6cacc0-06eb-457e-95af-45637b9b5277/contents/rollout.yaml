@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: $NAMESPACE
+  namespace: $NAMESPACE
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: $NAMESPACE
+  template:
+    metadata:
+      labels:
+        app: $NAMESPACE
+    spec:
+      containers:
+        - name: $NAMESPACE
+          image: $CONTAINER_IMAGE
+          imagePullPolicy: Always
+          ports:
+            - containerPort: $CONTAINER_PORT
+      imagePullSecrets:
+        - name: regcred
+  strategy:
+    blueGreen:
+      activeService: $NAMESPACE
+      autoPromotionEnabled: false
