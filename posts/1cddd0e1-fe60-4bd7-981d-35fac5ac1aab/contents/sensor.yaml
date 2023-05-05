@@ -27,7 +27,7 @@ spec:
               kind: Workflow
               metadata:
                 generateName: ci-
-                namespace: ci
+                namespace: $NAMESPACE
               spec:
                 entrypoint: main
                 templates:
@@ -49,7 +49,7 @@ spec:
                         - --local
                         - dockerfile=.
                         - --output
-                        - type=image,name=your.register.domain.com/juunini/hello-world:latest,push=true
+                        - type=image,name=$CONTAINER_REGISTRY_ADDRESS/$CONTAINER_TAG,push=true
                       command:
                         - buildctl-daemonless.sh
                       env:
@@ -67,9 +67,9 @@ spec:
                     inputs:
                       artifacts:
                         - git:
-                            branch: main
+                            branch: $GIT_BRANCH
                             depth: 1
-                            repo: https://github.com/yourname/repository.git
+                            repo: $GIT_REPOSITORY
                             singleBranch: true
                             sshPrivateKeySecret:
                               key: private-key
