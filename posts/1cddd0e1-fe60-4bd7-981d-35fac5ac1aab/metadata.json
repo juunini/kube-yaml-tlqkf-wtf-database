@@ -1,0 +1,1 @@
+{"title":"Git Webhook CI/CD","tags":["argo-cd","argo-workflows","ci","cd","ingress","webhook"],"authorId":41536271,"variables":[{"name":"$NAMESPACE","description":"Namespace","default":"ci"}],"created":1,"updated":1683303331431}

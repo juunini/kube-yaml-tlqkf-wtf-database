@@ -1,0 +1,12 @@
+resources:
+  - namespace.yaml
+  - service_account.yaml
+  - workflow_role.yaml
+  - emissary_executor_role.yaml
+  - secrets.yaml
+  - service.yaml
+  - event_bus.yaml
+  - event_source.yaml
+  - sensor.yaml
+  - issuer.yaml
+  - ingress.yaml

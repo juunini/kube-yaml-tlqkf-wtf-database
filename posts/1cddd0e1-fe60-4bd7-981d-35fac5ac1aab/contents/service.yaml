@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: $NAMESPACE
+  namespace: $NAMESPACE
+spec:
+  ports:
+    - port: 12000
+      targetPort: 12000
+  selector:
+    eventsource-name: $NAMESPACE
