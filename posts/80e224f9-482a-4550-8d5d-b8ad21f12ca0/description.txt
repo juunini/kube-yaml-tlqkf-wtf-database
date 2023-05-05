@@ -4,3 +4,6 @@
 - Argo Workflow(with Argo Event)
 - Ingress Nginx
 - Cert Manager
+
+전부 다 설치하시려면
+`sh install.sh` 를 해주세요.
