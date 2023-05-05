@@ -7,7 +7,7 @@ sh install_argo_event.sh
 
 echo -e "
 USERNAME: admin
-PASSWORD: $(kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d)
+PASSWORD: $(kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath='{.data.password}' | base64 -d)
 
 Argo CD: https://localhost:$ARGO_CD_PORT
 "
