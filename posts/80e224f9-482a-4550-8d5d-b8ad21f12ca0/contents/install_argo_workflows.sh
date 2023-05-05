@@ -10,3 +10,5 @@ kubectl patch deployment \
   "server",
   "--auth-mode=server"
 ]}]'
+
+kubectl -n argo port-forward deployment/argo-server $ARGO_WORKFLOW_PORT:2746 &
