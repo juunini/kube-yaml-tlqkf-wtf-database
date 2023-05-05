@@ -5,7 +5,7 @@ metadata:
   namespace: $NAMESPACE
 spec:
   acme:
-    email: your@email.com
+    email: $EMAIL
     privateKeySecretRef:
       name: letsencrypt
     server: https://acme-v02.api.letsencrypt.org/directory
